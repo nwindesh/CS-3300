@@ -1,8 +1,13 @@
 require "rails_helper"
 
+
 RSpec.describe Project, type: :model do
+
     context "validations tests" do
+        # Login user is a before each block
+        let(:user) {login_user}
         it "ensures the title is present" do
+            #login_user
             # Create a new project without a title
             project = Project.new(description: "Content of the description")
             # Check if the project object is not valid
@@ -26,6 +31,7 @@ RSpec.describe Project, type: :model do
     end
 
     context "scopes tests" do
+        #let(:user) {login_user}
         # Create a params identifier of title and description to quickly create new projects
         let(:params) { { title: "Title", description: "some description" } }
         before(:each) do

@@ -1,23 +1,18 @@
 {
   "RSpec": {
     "coverage": {
-      "/root/CS-3300/app/models/project.rb": {
+      "/root/portfolio/app/models/project.rb": {
         "lines": [
           1,
-          1,
+          null,
           1,
           null
         ]
       },
-      "/root/CS-3300/app/models/application_record.rb": {
+      "/root/portfolio/app/controllers/projects_controller.rb": {
         "lines": [
           1,
           1,
-          null
-        ]
-      },
-      "/root/CS-3300/app/controllers/projects_controller.rb": {
-        "lines": [
           1,
           1,
           null,
@@ -28,6 +23,7 @@
           null,
           null,
           1,
+          null,
           null,
           null,
           null,
@@ -89,13 +85,13 @@
           null
         ]
       },
-      "/root/CS-3300/app/controllers/application_controller.rb": {
+      "/root/portfolio/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/root/CS-3300/app/channels/application_cable/channel.rb": {
+      "/root/portfolio/app/mailers/application_mailer.rb": {
         "lines": [
           0,
           0,
@@ -105,7 +101,7 @@
         "branches": {
         }
       },
-      "/root/CS-3300/app/channels/application_cable/connection.rb": {
+      "/root/portfolio/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
           0,
@@ -115,7 +111,38 @@
         "branches": {
         }
       },
-      "/root/CS-3300/app/jobs/application_job.rb": {
+      "/root/portfolio/app/channels/application_cable/connection.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/root/portfolio/app/models/user.rb": {
+        "lines": [
+          0,
+          null,
+          null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/root/portfolio/app/models/application_record.rb": {
+        "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/root/portfolio/app/helpers/application_helper.rb": {
         "lines": [
           0,
           0
@@ -123,7 +150,7 @@
         "branches": {
         }
       },
-      "/root/CS-3300/app/helpers/application_helper.rb": {
+      "/root/portfolio/app/helpers/projects_helper.rb": {
         "lines": [
           0,
           0
@@ -131,18 +158,8 @@
         "branches": {
         }
       },
-      "/root/CS-3300/app/helpers/projects_helper.rb": {
+      "/root/portfolio/app/jobs/application_job.rb": {
         "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/root/CS-3300/app/mailers/application_mailer.rb": {
-        "lines": [
-          0,
-          0,
           0,
           0
         ],
@@ -150,6 +167,6 @@
         }
       }
     },
-    "timestamp": 1635799794
+    "timestamp": 1637450992
   }
 }

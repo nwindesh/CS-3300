@@ -1,16 +1,22 @@
 require 'rails_helper'
 
 RSpec.feature "Projects", type: :feature do
+  
   context "Create new project" do
+
     # Implement a before statement that will execute before each scenario
     before(:each) do
+      user = User.create!(:email => 'test@example.com', :password => 'f4k3p455w0rd')
+      login_as(user, :scope => :user)
       visit new_project_path
       within("form") do
         fill_in "Title", with: "Test title"
       end
     end
 
+    
     scenario "should be successful" do
+
       fill_in "Description", with: "Test description"
       click_button "Create Project"
       # Check that a successful project creation informs the user that it was successful
@@ -25,10 +31,14 @@ RSpec.feature "Projects", type: :feature do
   end
 
   context "Update project" do
+
     # Create a dummy project for the sets of update project tests
     let(:project) { Project.create(title: "Test title", description: "Test content") }
+
     # Before each test visit the edit page 
     before(:each) do
+      user = User.create!(:email => 'test@example.com', :password => 'f4k3p455w0rd')
+      login_as(user, :scope => :user)
       visit edit_project_path(project)
     end
 
@@ -52,6 +62,11 @@ RSpec.feature "Projects", type: :feature do
   end
 
   context "Remove existing project" do
+    before(:each) do
+      user = User.create!(:email => 'test@example.com', :password => 'f4k3p455w0rd')
+      login_as(user, :scope => :user)
+    end
+
     # Create a project for the tests
     let!(:project) { Project.create(title: "Test title", description: "Test content") }
     scenario "remove project" do
