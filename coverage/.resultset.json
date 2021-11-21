@@ -91,36 +91,6 @@
           null
         ]
       },
-      "/root/portfolio/app/mailers/application_mailer.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/root/portfolio/app/channels/application_cable/channel.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/root/portfolio/app/channels/application_cable/connection.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
       "/root/portfolio/app/models/user.rb": {
         "lines": [
           0,
@@ -167,6 +137,6 @@
         }
       }
     },
-    "timestamp": 1637450992
+    "timestamp": 1637455366
   }
 }

@@ -7,4 +7,6 @@ RSpec.feature "Visiting the homepage", type: :feature do
     # Check that the word projects is present on the page
     expect(page).to have_text("Projects")
   end
+
+  
 end

@@ -7,6 +7,10 @@ module ControllerMacros
         # user.confirm! # Or set a confirmed_at inside the factory. Only necessary if you are using the "confirmable" module
         sign_in user
       end
+
+      after do
+        sign_out user
+      end
     end
 
     def login_user_capybara

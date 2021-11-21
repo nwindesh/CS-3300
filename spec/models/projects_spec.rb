@@ -18,4 +18,5 @@ RSpec.describe ProjectsController, type: :controller do
         expect(response).to be_success
       end
     end
+
   end

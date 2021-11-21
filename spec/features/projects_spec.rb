@@ -62,6 +62,7 @@ RSpec.feature "Projects", type: :feature do
   end
 
   context "Remove existing project" do
+
     before(:each) do
       user = User.create!(:email => 'test@example.com', :password => 'f4k3p455w0rd')
       login_as(user, :scope => :user)
