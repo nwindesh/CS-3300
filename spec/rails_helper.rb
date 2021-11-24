@@ -17,6 +17,8 @@ SimpleCov.start 'rails' do
   add_filter '/bin/'
   add_filter '/db/'
   add_filter '/spec/' # for rspec
+  add_filter '/app/mailers/'
+  add_filter '/app/channels'
 end
 # Add additional requires below this line. Rails is not loaded until this point!
 
